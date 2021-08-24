@@ -1,0 +1,423 @@
+body, html {
+	font-family: sans-serif;
+	background-image: linear-gradient(rgba(0, 0, 0, 0.842),rgba(0, 0, 0, 0.808)),url(img/ahaa.png);
+	height: 100%;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-attachment: fixed;
+  }
+
+
+.logotop img{
+	margin-top: 15px;
+	margin-left: 15px;
+	width: 90px;
+	height: auto;
+}
+
+
+.navbar {
+    width : 100%;
+    height: 20vh;
+    position: relative;
+}
+
+.navbar ul{
+    float: right;
+    list-style-type: none;
+    margin-right: 10px;
+}
+
+.navbar .pag h4{
+    position: absolute;
+	font-size: 14px;
+	left:120px;
+	bottom : 80px;
+	color:white;
+}
+.navbar .pag h5{
+    position: absolute;
+	font-size: 14px;
+	left:120px;
+	bottom : 40px;
+	color:white;
+}
+
+.navbar ul li{
+    display: inline-block;
+}
+
+.navbar ul li a{
+	background-color: #fff;
+    color: #000;
+    transition: 0.6s;
+    padding: 5px 20px;
+    border: 2px solid;
+    text-decoration: none;
+}
+
+.navbar ul li a:hover{
+    background-color: #000;
+    color: #fff;
+}
+
+.navbar ul li.active a{
+    background-color: #2b4ab1;
+    color: #fff;
+    border: 2px solid;
+}
+
+
+.container{
+	margin-top: -80px;
+	margin-left: 50px;
+	display: flex;
+	min-height: 100vh;
+	justify-content: center;
+	align-items: center;
+	position: absolute;
+	width: 90%;
+	display: grid;
+	grid-template-rows: auto;
+	grid-gap: 0 40px;
+	grid-template-columns: repeat(auto-fill, minmax(260px,1fr));
+}
+
+.container .box{
+	position: relative;
+	width: 300px;
+	height: 450px;
+	background: #061959;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	border:1px solid black;
+}
+
+.content{
+	position: relative;
+	padding: 20px;
+}
+
+.box .content h2{
+	position: absolute;
+	top: -30px;
+	right: 20px;
+	margin: 0;
+	padding: 0;
+	font-size: 70px;
+	font-weight: bold;
+	color: rgba(255, 255, 255, 0.3);
+	transition: 0.5s;
+}
+
+.box:hover .content h2{
+	top: -100px;
+}
+
+.box .content h3{
+	margin: 0 0 10px;
+	padding: 0;
+	font-size: 24px;
+	font-weight: 500;
+	color: white;	
+}
+
+.box .content p{
+	margin: 0;
+	padding: 0;
+	color: white;
+	font-size: 16px;
+}
+
+.box .content a{
+	position: relative;
+	margin: 20px 0 0;
+	padding: 10px 20px;
+	text-decoration: none;
+	border:1px solid white;
+	display: inline-block;
+	color: white;
+	transition: 0.5s;
+	transform: translateY(-40px);
+	opacity: 0;
+	visibility: hidden;
+}
+
+.box:hover .content a{
+	transform: translateY(0);
+	opacity: 1;
+	visibility: visible;
+}
+
+.box .content a:hover{
+	color: black;
+	background: white;
+}
+
+.box .content .from{
+	position: absolute;
+	right: 20px;
+	bottom: -30px;
+	text-decoration: none;
+	color: white;
+	transition: 1.5s;
+	transform: translateY(50px);
+	opacity: 0;
+	visibility: hidden;
+}
+
+.box:hover .content .from{
+	transform: translateY(0);
+	opacity: 1;
+	visibility: visible;
+}
+
+.content2{
+	position: relative;
+	padding: 20px;
+}
+
+.box .content2 h2{
+	position: absolute;
+	top: -40px;
+	right: 20px;
+	margin: 0;
+	padding: 0;
+	font-size: 46px;
+	color: rgba(255, 255, 255, 0.3);
+	transition: 0.5s;
+}
+
+.box:hover .content2 h2{
+	top: -100px;
+}
+
+.box .content2 h3{
+	margin: 0 0 10px;
+	padding: 0;
+	font-size: 24px;
+	font-weight: 500;
+	color: white;	
+}
+
+.box .content2 p{
+	margin: 0;
+	padding: 0;
+	color: white;
+	font-size: 16px;
+}
+
+.box .content2 a{
+	position: relative;
+	margin: 20px 0 0;
+	padding: 10px 20px;
+	text-decoration: none;
+	border:1px solid white;
+	display: inline-block;
+	color: white;
+	transition: 0.5s;
+	transform: translateY(-40px);
+	opacity: 0;
+	visibility: hidden;
+}
+
+.box:hover .content2 a{
+	transform: translateY(0);
+	opacity: 1;
+	visibility: visible;
+}
+
+.box .content2 a:hover{
+	color: black;
+	background: white;
+}
+
+
+.box .content2 .from{
+	position: absolute;
+	right: 20px;
+	bottom: -30px;
+	text-decoration: none;
+	color: white;
+	transition: 1.5s;
+	transform: translateY(50px);
+	opacity: 0;
+	visibility: hidden;
+}
+
+.box:hover .content2 .from{
+	transform: translateY(0);
+	opacity: 1;
+	visibility: visible;
+}
+
+.content3{
+	position: relative;
+	padding: 10px;
+}
+
+.box .content3 h2{
+	position: absolute;
+	top: -25px;
+	right: 20px;
+	margin: 0;
+	padding: 0;
+	font-size: 70px;
+	color: rgba(255, 255, 255, 0.3);
+	transition: 0.5s;
+}
+
+.box:hover .content3 h2{
+	top: -90px;
+}
+
+.box .content3 h3{
+	margin: 0 0 10px;
+	padding: 0;
+	font-size: 24px;
+	font-weight: 500;
+	color: white;	
+}
+
+.box .content3 p{
+	margin: 0;
+	padding: 0;
+	color: white;
+	font-size: 16px;
+}
+
+.box .content3 a{
+	position: relative;
+	margin: 20px 0 0;
+	padding: 10px 20px;
+	text-decoration: none;
+	border:1px solid white;
+	display: inline-block;
+	color: white;
+	transition: 0.5s;
+	transform: translateY(-40px);
+	opacity: 0;
+	visibility: hidden;
+}
+
+.box:hover .content3 a{
+	transform: translateY(0);
+	opacity: 1;
+	visibility: visible;
+}
+
+.box .content3 a:hover{
+	color: black;
+	background: white;
+}
+
+
+.box .content3 .from{
+	position: absolute;
+	right: 20px;
+	bottom: -30px;
+	text-decoration: none;
+	color: white;
+	transition: 1.5s;
+	transform: translateY(50px);
+	opacity: 0;
+	visibility: hidden;
+}
+
+.box:hover .content3 .from{
+	transform: translateY(0);
+	opacity: 1;
+	visibility: visible;
+}
+
+.content4{
+	position: relative;
+	padding: 20px;
+}
+
+.box .content4 h2{
+	position: absolute;
+	top: -20px;
+	right: 0px;
+	margin: 0;
+	padding: 0;
+	font-size: 60px;
+	color: rgba(255, 255, 255, 0.3);
+	transition: 0.5s;
+}
+
+.box:hover .content4 h2{
+	top: -70px;
+}
+
+.box .content4 h3{
+	margin: 0 0 10px;
+	padding: 0;
+	font-size: 24px;
+	font-weight: 500;
+	color: white;	
+}
+
+.box .content4 p{
+	margin: 0;
+	padding: 0;
+	color: white;
+	font-size: 16px;
+}
+
+.box .content4 a{
+	position: relative;
+	margin: 20px 0 0;
+	padding: 10px 20px;
+	text-decoration: none;
+	border:1px solid white;
+	display: inline-block;
+	color: white;
+	transition: 0.5s;
+	transform: translateY(-40px);
+	opacity: 0;
+	visibility: hidden;
+}
+
+.box:hover .content4 a{
+	transform: translateY(0);
+	opacity: 1;
+	visibility: visible;
+}
+
+.box .content4 a:hover{
+	color: black;
+	background: white;
+}
+
+.box .content4 .from{
+	position: absolute;
+	right: 20px;
+	bottom: -20px;
+	text-decoration: none;
+	color: white;
+	transition: 1.5s;
+	transform: translateY(50px);
+	opacity: 0;
+	visibility: hidden;
+}
+
+.box:hover .content4 .from{
+	transform: translateY(0);
+	opacity: 1;
+	visibility: visible;
+}
+
+::-webkit-scrollbar{
+	width: 12px;
+}
+
+::-webkit-scrollbar-thumb{
+	background: linear-gradient(to bottom,#5d61e8,#fff);
+}
+
+::-webkit-scrollbar-thumb:hover{
+	background: linear-gradient(to top,#5d61e8,#fff);
+}

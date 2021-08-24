@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>MyPumpkins</title>
+	<link rel="shortcut icon" href="img/like.png">
+	<link rel="stylesheet" type="text/css" href="rach.css">
+</head>
+<body>
+	<img src="img/star.gif">
+	<h1>Suka Gak Sama Hadiah ini ?</h1>
+	<div class="hmm">
+		<a id="btn_suka" href="trans.html" onclick="alert('Nahhhh gitu dong bray!\nPatrick Mo Ngasih Surat ya Brayy')">Suka</a>
+		<button id="btn_gasuka" onclick="gasuka(this)"style="position:absolute">Gasuka</button>
+	</div>
+</body>
+	<script>
+		function gasuka(id){
+			var Sukaaaa = document.getElementById('btn_suka');
+			var i = Math.floor(Math.random()*300)+1;
+			var j = Math.floor(Math.random()*100)+Sukaaaa.offsetTop;
+			id.style.left = i+'px';
+			id.style.top = j+'px';
+		}
+	</script>
+</html>

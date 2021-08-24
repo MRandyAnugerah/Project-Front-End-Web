@@ -1,0 +1,120 @@
+body, html {
+	font-family: sans-serif;
+	background: linear-gradient(80deg, #e6a432, #f7cb81);
+	height: 100%;
+	background-position: center;
+	background-size: cover;
+	background-attachment: fixed;
+	animation:transtion 2s;
+}
+
+@keyframes transtion {
+from{
+opacity: 0;
+transform:rotateY(-10deg);  
+}
+
+to{
+opacity: 1;
+transform:rotateY(0deg);
+}
+
+}
+
+.navbar {
+	width : 100%;
+	position: relative;
+}
+
+.navbar ul{
+	float: right;
+	list-style-type: none;
+	margin-right: 10px;
+	margin-top: 15px;
+}
+
+.navbar ul li{
+	display: inline-block;
+}
+
+.navbar ul li a{
+	color: #fff;
+	padding: 5px 20px;
+	border: 1px solid;
+	text-decoration: none;
+}
+
+.navbar ul li a:hover{
+	background-color: #fff;
+	color: #000;
+}
+
+.navbar ul li.active a{
+	background-color: #fff;
+	color: #000;
+	border: 2px solid;
+}
+
+.container{
+	position:relative;
+	width: 1400px;
+	top: 50px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-wrap: wrap;
+	padding: 30px;
+}
+
+.container .card{
+	position: relative;
+	max-width: 300px;
+	height: 450px;
+	background: #fff;
+	margin:30px 10px ;
+	padding: 20px 15px;
+	display: flex;
+	flex-direction: column;
+	box-shadow: 0 5px 202px rgba(0,0,0,0.5);
+	transition: 0.3s ease-in-out;
+}
+
+.container .card:hover{
+	height: 520px;
+}
+
+.container .card .imgbg
+{
+	position: relative;
+	width: 260px;
+	height: 260px;
+	top: -60px;
+	left: 0px;
+	z-index: 1;
+
+}
+
+.container .card .imgbg img
+{
+	max-width: 100%;
+	border-radius: 4px;
+}
+
+.container .card .content{
+	position: relative;
+	margin-top:-100px ;
+	padding:10px 15px;
+	text-align: center;
+	top: 30%;
+	color:#111;
+	visibility: hidden;
+	opacity: 0;
+	transition: 0.3s ease-in-out;
+}
+
+.container .card:hover .content{
+	visibility: visible;
+	opacity: 1;
+	margin-top: -40px;
+	transition-delay: 0.3s;
+}

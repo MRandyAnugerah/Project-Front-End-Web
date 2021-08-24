@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta http-equiv="refresh" content="300">
+	<title>MyPumpkins/Home</title>
+	<link rel="shortcut icon" href="img/gift.png">
+	<link rel="stylesheet" href="flipclock.css">
+	<link rel="stylesheet" href="gretting.css">
+	<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+	<div class="greeting">
+		<script src="grettingHBD.js"></script>
+	  </div>
+	<div class="clock">
+		<script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+		<script src="flipclock.js"></script>
+		<script type="text/javascript">
+			var clock = $('.clock').FlipClock({
+				clockFace: 'TwelveHourClock'
+			});
+		</script>
+	</div>
+
+	<div class="navbar">
+		<ul>
+			<li class="active"><a href="#">Home</a></li>
+			<li><a href="music.html">Music</a></li>
+			<li><a href="flip.html">Album</a></li>
+			<li><a href="developer.html">About</a></li>
+		</ul>
+	</div>	
+
+	<div class="animationarea">
+
+		<audio src="musik/relax.mp3" id="musik"></audio>
+		<a onclick="PlayMusic()" href="#"><img src="img/pumpkin.png"></a>
+		
+		<script type="text/javascript">
+			function PlayMusic(){
+				document.getElementById("musik").play();
+			}
+		</script>
+
+			<ul class="boxarea">
+				<li></li>
+				<li></li>
+				<li></li>
+				<li></li>
+				<li></li>
+				<li></li>
+			</ul>
+		</div>
+
+</body>
+</html>
