@@ -4,10 +4,10 @@ var greeting;
 var greeting2;
 
 if (hourNow >= 0 & hourNow < 1) {
-	greeting = "Happy Birthday My Pumpkins!";
-    greeting2 = "Wish U All the Best!";
+	greeting = "Good Night!";
+    greeting2 = " ";
 } 
-else if(hourNow >= 8){
+if(hourNow >= 8){
     greeting = "Hallo My Pumpkins!"
     greeting2 = "Have a Good Day"
 }
