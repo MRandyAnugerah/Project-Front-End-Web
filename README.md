@@ -1,2 +1,2 @@
-# Project Front End Web
-Project Front End Web using Html, CSS dan JavaScript
+# Project Make Website for Birthday
+Project Website using Html, CSS dan JavaScript
